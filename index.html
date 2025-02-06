@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Color Picker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Select a Color from an Image</h1>
+        
+        <input type="file" id="imageInput" accept="image/*">
+        
+        <div class="canvas-container">
+            <button id="zoomInBtn">+</button>
+            <canvas id="canvas"></canvas>
+            <button id="zoomOutBtn">−</button>
+        </div>
+
+        <div class="color-info">
+            <div class="color-display" id="colorDisplay"></div>
+            <p class="hex-code" id="hexCode">#FFFFFF</p>
+            <button id="copyBtn">Copy HEX code</button>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
